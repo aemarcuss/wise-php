@@ -115,7 +115,7 @@ class TransferService extends Service
         if (isset($params["createdDateStart"])){
             $defaults["createdDateStart"] = $params["createdDateStart"];
         }
-        if (isset($params["createdDateStart"])){
+        if (isset($params["createdDateEnd"])){
             $defaults["createdDateEnd"] = $params["createdDateEnd"];
         }
         $path = $this->withQuery("v1/transfers", $defaults);
